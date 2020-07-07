@@ -31,9 +31,6 @@
     <Filter Include="源文件\btstack\3rd-party">
       <UniqueIdentifier>{1db22f3c-f9cf-4a8a-91eb-83fd21957921}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\btstack\example">
-      <UniqueIdentifier>{cc1f01f8-081c-440d-805f-6fb86b127129}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\btstack\src\ble">
       <UniqueIdentifier>{5e6d930a-d3f2-4134-a178-60fbfacf0a01}</UniqueIdentifier>
     </Filter>
@@ -88,6 +85,9 @@
     <Filter Include="源文件\btstack\3rd-party\bluedroid\encoder">
       <UniqueIdentifier>{a36ed1d9-f9a3-4785-9b97-8a2219c0f01e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\app">
+      <UniqueIdentifier>{e473b540-40c3-48f7-a909-f994963d7c30}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="btstack\chipset\intel\btstack_chipset_intel_firmware.c">
@@ -107,9 +107,6 @@
     </ClCompile>
     <ClCompile Include="btstack\port\windows-winusb\main.c">
       <Filter>源文件\btstack\port\windows-winusb</Filter>
-    </ClCompile>
-    <ClCompile Include="btstack\example\a2dp_sink_demo.c">
-      <Filter>源文件\btstack\example</Filter>
     </ClCompile>
     <ClCompile Include="btstack\src\ble\ancs_client.c">
       <Filter>源文件\btstack\src\ble</Filter>
@@ -551,6 +548,15 @@
     </ClCompile>
     <ClCompile Include="btstack\3rd-party\yxml\yxml.c">
       <Filter>源文件\btstack\3rd-party\yxml</Filter>
+    </ClCompile>
+    <ClCompile Include="app\btstack_main.c">
+      <Filter>源文件\app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\a2dp.c">
+      <Filter>源文件\app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\ble.c">
+      <Filter>源文件\app</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
