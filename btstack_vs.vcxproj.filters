@@ -549,6 +549,15 @@
     <ClCompile Include="btstack\3rd-party\yxml\yxml.c">
       <Filter>源文件\btstack\3rd-party\yxml</Filter>
     </ClCompile>
+    <ClCompile Include="app\main.c">
+      <Filter>源文件\app</Filter>
+    </ClCompile>
+    <ClCompile Include="btstack\platform\posix\btstack_tlv_posix.c">
+      <Filter>源文件\btstack\platform\posix</Filter>
+    </ClCompile>
+    <ClCompile Include="btstack\src\classic\avrcp_browsing.c">
+      <Filter>源文件\btstack\src\classic</Filter>
+    </ClCompile>
     <ClCompile Include="app\btstack_main.c">
       <Filter>源文件\app</Filter>
     </ClCompile>
@@ -1006,6 +1015,9 @@
     </ClInclude>
     <ClInclude Include="btstack\3rd-party\tinydir\tinydir.h">
       <Filter>源文件\btstack\3rd-party\tinydir</Filter>
+    </ClInclude>
+    <ClInclude Include="app\btstack_config.h">
+      <Filter>源文件\app</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

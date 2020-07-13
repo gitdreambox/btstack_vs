@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;__builtin_clz=;ssize_t=long;WINBOOL=BOOL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\include;.\btstack\3rd-party\bluedroid\encoder\include;.\btstack\3rd-party\bluedroid\decoder\include;.\btstack\3rd-party\hxcmod-player\mods;.\btstack\3rd-party\hxcmod-player;.\btstack\3rd-party\md5;.\btstack\3rd-party\micro-ecc;.\btstack\3rd-party\rijndael;.\btstack\3rd-party\tinydir;.\btstack\3rd-party\yxml;.\btstack\chipset\intel;.\btstack\chipset\csr;.\btstack\platform\windows;.\btstack\platform\posix;.\btstack\src;.\btstack\src\classic;.\btstack\src\ble;.\btstack\src\ble\gatt-service;.\btstack\port\windows-winusb;.\btstack\platform\embedded;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\app;.\include;.\btstack\3rd-party\bluedroid\encoder\include;.\btstack\3rd-party\bluedroid\decoder\include;.\btstack\3rd-party\hxcmod-player\mods;.\btstack\3rd-party\hxcmod-player;.\btstack\3rd-party\md5;.\btstack\3rd-party\micro-ecc;.\btstack\3rd-party\rijndael;.\btstack\3rd-party\tinydir;.\btstack\3rd-party\yxml;.\btstack\chipset\intel;.\btstack\chipset\csr;.\btstack\platform\windows;.\btstack\platform\posix;.\btstack\src;.\btstack\src\classic;.\btstack\src\ble;.\btstack\src\ble\gatt-service;.\btstack\platform\embedded;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,6 +144,7 @@
     <ClCompile Include="app\a2dp.c" />
     <ClCompile Include="app\ble.c" />
     <ClCompile Include="app\btstack_main.c" />
+    <ClCompile Include="app\main.c" />
     <ClCompile Include="btstack\3rd-party\bluedroid\decoder\srce\alloc.c" />
     <ClCompile Include="btstack\3rd-party\bluedroid\decoder\srce\bitalloc-sbc.c" />
     <ClCompile Include="btstack\3rd-party\bluedroid\decoder\srce\bitalloc.c" />
@@ -175,6 +176,7 @@
     <ClCompile Include="btstack\chipset\intel\btstack_chipset_intel_firmware.c" />
     <ClCompile Include="btstack\platform\posix\btstack_audio_portaudio.c" />
     <ClCompile Include="btstack\platform\posix\btstack_link_key_db_fs.c" />
+    <ClCompile Include="btstack\platform\posix\btstack_tlv_posix.c" />
     <ClCompile Include="btstack\platform\posix\wav_util.c" />
     <ClCompile Include="btstack\platform\windows\btstack_run_loop_windows.c" />
     <ClCompile Include="btstack\platform\windows\btstack_stdin_windows.c" />
@@ -225,6 +227,7 @@
     <ClCompile Include="btstack\src\classic\avdtp_source.c" />
     <ClCompile Include="btstack\src\classic\avdtp_util.c" />
     <ClCompile Include="btstack\src\classic\avrcp.c" />
+    <ClCompile Include="btstack\src\classic\avrcp_browsing.c" />
     <ClCompile Include="btstack\src\classic\avrcp_browsing_controller.c" />
     <ClCompile Include="btstack\src\classic\avrcp_browsing_target.c" />
     <ClCompile Include="btstack\src\classic\avrcp_controller.c" />
@@ -299,6 +302,7 @@
     <ClCompile Include="btstack\src\mesh\provisioning_provisioner.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="app\btstack_config.h" />
     <ClInclude Include="btstack\3rd-party\hxcmod-player\hxcmod.h" />
     <ClInclude Include="btstack\3rd-party\hxcmod-player\mods\mod.h" />
     <ClInclude Include="btstack\3rd-party\md5\md5.h" />
