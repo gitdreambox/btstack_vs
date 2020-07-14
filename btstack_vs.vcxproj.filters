@@ -31,6 +31,9 @@
     <Filter Include="源文件\btstack\3rd-party">
       <UniqueIdentifier>{1db22f3c-f9cf-4a8a-91eb-83fd21957921}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\btstack\example">
+      <UniqueIdentifier>{cc1f01f8-081c-440d-805f-6fb86b127129}</UniqueIdentifier>
+    </Filter>
     <Filter Include="源文件\btstack\src\ble">
       <UniqueIdentifier>{5e6d930a-d3f2-4134-a178-60fbfacf0a01}</UniqueIdentifier>
     </Filter>
@@ -86,7 +89,7 @@
       <UniqueIdentifier>{a36ed1d9-f9a3-4785-9b97-8a2219c0f01e}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\app">
-      <UniqueIdentifier>{e473b540-40c3-48f7-a909-f994963d7c30}</UniqueIdentifier>
+      <UniqueIdentifier>{b0cfead0-d26b-4087-bd80-1d8a3c66c173}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -104,9 +107,6 @@
     </ClCompile>
     <ClCompile Include="btstack\platform\windows\hci_transport_h2_winusb.c">
       <Filter>源文件\btstack\platform\windows</Filter>
-    </ClCompile>
-    <ClCompile Include="btstack\port\windows-winusb\main.c">
-      <Filter>源文件\btstack\port\windows-winusb</Filter>
     </ClCompile>
     <ClCompile Include="btstack\src\ble\ancs_client.c">
       <Filter>源文件\btstack\src\ble</Filter>
@@ -549,23 +549,23 @@
     <ClCompile Include="btstack\3rd-party\yxml\yxml.c">
       <Filter>源文件\btstack\3rd-party\yxml</Filter>
     </ClCompile>
-    <ClCompile Include="app\main.c">
-      <Filter>源文件\app</Filter>
-    </ClCompile>
-    <ClCompile Include="btstack\platform\posix\btstack_tlv_posix.c">
-      <Filter>源文件\btstack\platform\posix</Filter>
-    </ClCompile>
-    <ClCompile Include="btstack\src\classic\avrcp_browsing.c">
-      <Filter>源文件\btstack\src\classic</Filter>
-    </ClCompile>
-    <ClCompile Include="app\btstack_main.c">
-      <Filter>源文件\app</Filter>
-    </ClCompile>
     <ClCompile Include="app\a2dp.c">
       <Filter>源文件\app</Filter>
     </ClCompile>
     <ClCompile Include="app\ble.c">
       <Filter>源文件\app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\btstack_main.c">
+      <Filter>源文件\app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\main.c">
+      <Filter>源文件\app</Filter>
+    </ClCompile>
+    <ClCompile Include="btstack\src\classic\avrcp_browsing.c">
+      <Filter>源文件\btstack\src\classic</Filter>
+    </ClCompile>
+    <ClCompile Include="btstack\platform\posix\btstack_tlv_posix.c">
+      <Filter>源文件\btstack\platform\posix</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -574,9 +574,6 @@
     </ClInclude>
     <ClInclude Include="btstack\platform\windows\btstack_run_loop_windows.h">
       <Filter>源文件\btstack\platform\windows</Filter>
-    </ClInclude>
-    <ClInclude Include="btstack\port\windows-winusb\btstack_config.h">
-      <Filter>源文件\btstack\port\windows-winusb</Filter>
     </ClInclude>
     <ClInclude Include="btstack\src\ble\ancs_client.h">
       <Filter>源文件\btstack\src\ble</Filter>
@@ -988,9 +985,6 @@
     </ClInclude>
     <ClInclude Include="btstack\src\l2cap.h">
       <Filter>源文件\btstack\src</Filter>
-    </ClInclude>
-    <ClInclude Include="btstack\platform\posix\btstack_link_key_db_fs.h">
-      <Filter>源文件\btstack\platform\posix</Filter>
     </ClInclude>
     <ClInclude Include="btstack\platform\posix\wav_util.h">
       <Filter>源文件\btstack\platform\posix</Filter>

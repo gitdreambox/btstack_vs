@@ -23,13 +23,13 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{1a245570-8042-47af-a70d-65442336a9c7}</ProjectGuid>
     <RootNamespace>btstackvs</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -182,7 +182,6 @@
     <ClCompile Include="btstack\platform\windows\btstack_stdin_windows.c" />
     <ClCompile Include="btstack\platform\windows\btstack_uart_block_windows.c" />
     <ClCompile Include="btstack\platform\windows\hci_transport_h2_winusb.c" />
-    <ClCompile Include="btstack\port\windows-winusb\main.c" />
     <ClCompile Include="btstack\src\ad_parser.c" />
     <ClCompile Include="btstack\src\ble\ancs_client.c" />
     <ClCompile Include="btstack\src\ble\att_db.c" />
@@ -311,10 +310,8 @@
     <ClInclude Include="btstack\3rd-party\tinydir\tinydir.h" />
     <ClInclude Include="btstack\3rd-party\yxml\yxml.h" />
     <ClInclude Include="btstack\chipset\intel\btstack_chipset_intel_firmware.h" />
-    <ClInclude Include="btstack\platform\posix\btstack_link_key_db_fs.h" />
     <ClInclude Include="btstack\platform\posix\wav_util.h" />
     <ClInclude Include="btstack\platform\windows\btstack_run_loop_windows.h" />
-    <ClInclude Include="btstack\port\windows-winusb\btstack_config.h" />
     <ClInclude Include="btstack\src\ad_parser.h" />
     <ClInclude Include="btstack\src\ble\ancs_client.h" />
     <ClInclude Include="btstack\src\ble\att_db.h" />
